@@ -1,0 +1,140 @@
+/*
+ * Base
+ */
+ html {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  background-color: #656565;
+}
+
+img {
+  vertical-align: middle;
+}
+
+button {
+  outline: none;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+.page-header {
+  background-color: #fff;
+  height: 6vh;
+}
+
+.page-header h1 {
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+}
+
+.page-main {
+  position: relative;
+  background-color: #ff8873;
+}
+
+.page-main > div {
+  padding: 50px 0 100px;
+}
+
+.page-main > div h2 {
+  color: #fff;
+  text-align: center;
+  margin: 0 0 50px;
+  font-weight: normal;
+  letter-spacing: 0.15em;
+  font-size: 70px;
+}
+
+#images p {
+  position: relative;
+  width: 580px;
+  height: 380px;
+  margin: 0 auto 80px;
+  overflow: hidden;
+}
+
+#images p strong {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  bottom: 0;
+  width: 540px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+#images p span {
+  position: absolute;
+  display: block;
+  z-index: 0;
+  top: 0;
+  width: 580px;
+  height: 380px;
+  box-shadow: inset 0 0 50px rgba(50, 30, 0, 0.6),
+              inset 0 0 100px rgba(50, 30, 0, 0.3);
+  background: rgba(255, 155, 0, 0.2);
+  opacity: 0;
+}
+
+#images p:nth-child(1) strong {
+  opacity: 0;
+}
+
+#images p:nth-child(2) strong {
+  opacity: 0;
+  left: -200%;
+}
+
+#images p:nth-child(3) strong {
+  bottom: -80px;
+  background: rgba(34, 34, 34, 1);
+}
+
+#images p:nth-child(3) img {
+  position: absolute;
+  top: 0px;
+}
+
+.page-footer {
+  background-color: #656565;
+}
+
+.page-footer small {
+  display: block;
+  color: #fff;
+  font-size: 25px;
+  width: 976px;
+  margin: 0 auto;
+  height: 6vh;
+  letter-spacing: 0.15em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.page-footer a {
+  color: #fff;
+  text-decoration: none;
+}
